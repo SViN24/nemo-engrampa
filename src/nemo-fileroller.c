@@ -54,7 +54,7 @@ extract_to_callback (NemoMenuItem *item,
 	quoted_uri = g_shell_quote (uri);
 	quoted_default_dir = g_shell_quote (default_dir);
 
-	cmd = g_string_new ("file-roller");
+	cmd = g_string_new ("engrampa");
 	g_string_append_printf (cmd,
 				" --default-dir=%s --extract %s",
 				quoted_default_dir,
@@ -83,7 +83,7 @@ extract_here_callback (NemoMenuItem *item,
 
 	files = g_object_get_data (G_OBJECT (item), "files");
 
-	cmd = g_string_new ("file-roller --extract-here");
+	cmd = g_string_new ("engrampa --extract-here");
 
 	for (scan = files; scan; scan = scan->next) {
 		NemoFileInfo *file = scan->data;
@@ -124,7 +124,7 @@ add_callback (NemoMenuItem *item,
 	dir = g_path_get_dirname (uri);
 	quoted_dir = g_shell_quote (dir);
 
-	cmd = g_string_new ("file-roller");
+	cmd = g_string_new ("engrampa");
 	g_string_append_printf (cmd," --default-dir=%s --add", quoted_dir);
 
 	g_free (uri);
