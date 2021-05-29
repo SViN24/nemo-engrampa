@@ -1,0 +1,3 @@
+version=3
+http://packages.linuxmint.com/pool/backport/n/nemo-fileroller/ \
+    nemo-fileroller_([\d.]+)%2b[\w\d]+@ARCHIVE_EXT@
