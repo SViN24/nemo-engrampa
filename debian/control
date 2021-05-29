@@ -1,7 +1,7 @@
-Source: nemo-fileroller
+Source: nemo-engrampa
 Section: misc
 Priority: optional
-Maintainer: Debian Cinnamon Team <debian-cinnamon@lists.debian.org>
+Maintainer: SViN24 <svin@dismail.de>
 Uploaders:
  Maximiliano Curia <maxy@debian.org>,
  Margarita Manterola <marga@debian.org>,
@@ -16,11 +16,11 @@ Standards-Version: 4.1.4
 Vcs-Browser: https://salsa.debian.org/cinnamon-team/nemo-fileroller
 Vcs-Git: https://salsa.debian.org/cinnamon-team/nemo-fileroller.git
 
-Package: nemo-fileroller
+Package: nemo-engrampa
 Architecture: any
-Depends: file-roller, nemo (>= 4.4), ${misc:Depends}, ${shlibs:Depends}
+Depends: engrampa, nemo (>= 4.4), ${misc:Depends}, ${shlibs:Depends}
 Recommends: cinnamon-l10n (>= 4.4)
-Description: File Roller integration for Nemo
- Nemo File Roller is an Nemo extension which allows you to create and extract
+Description: Engrampa integration for Nemo
+ Nemo Engrampa is an Nemo extension which allows you to create and extract
  archives in Nemo. This extension adds "Extract Here" (for archive files) and
  "Compress..." items to the right-click menu.
